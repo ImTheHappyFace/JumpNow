@@ -114,11 +114,12 @@ main{
         left: 0;
     }
 
-    .hashtags{
-        text-align: center;
+    .hashtags {
+        text-align: left;
         font-size: 11px;
         font-weight: 600;
         color: rgb(85, 85, 85);
+        padding-left: 10px;
     }
 
     .hashtags span{
@@ -190,8 +191,6 @@ main{
     .search_cc{
         border: none;
     }
-
- 
     
     .search_main i{
         font-size: 10px;
@@ -212,7 +211,7 @@ main{
     }
 
     .footer_main{
-        height: 109px;
+        height: 74px;
         background-color: #f9f9f9;
     }
 
@@ -231,7 +230,7 @@ main{
         font-size: 9px;
         padding: 5px;
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: 4px;
     }
 
     .footer_sub{
