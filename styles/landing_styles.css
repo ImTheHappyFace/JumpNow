@@ -23,17 +23,6 @@ main {
   cursor: pointer;
 }
 
-.side_circle {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 100%;
-  background: #ff485ea6;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 0;
-}
 
 .main_heading {
   /* margin-bottom: 16%; */
@@ -89,7 +78,17 @@ main {
 .header_elems {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.tag_main_1,
+.tag_main_2{
+    display: flex;
+}
+
+.tag_main_1 .tags,
+.tag_main_2 .tags{
+  margin-right: 1.5rem;
 }
 
 .ham_menu {
@@ -129,7 +128,7 @@ main {
 @media only screen and (min-width: 1300px) {
   .header_elems {
     padding: 15px 25px;
-    width: 79%;
+    width: 81%;
   }
 
   .main_container {
@@ -141,37 +140,35 @@ main {
     display: none;
   }
 
-  .header_start,
-  .sign_in {
+  .tag_1,.tag_2{
+      font-family: 'Poppins Medium';
+      font-weight: light;
+      font-size: 14px;
+  }
+
+  .header_start {
     outline: none;
     border: none;
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px 10px;
     color: #ff485e;
     cursor: pointer;
     box-shadow: 0px 3px 7px #0000004d;
     transition: 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-family: 'Popins Medium';
   }
 
-  .header_start:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 3px 7px #ff485d59;
-    font-weight: bold;
-  }
-  .sign_in:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 3px 7px #ff485d59;
-    font-weight: bold;
+  .sign_in{
+      background: none;
+      padding: 5px;
+      color: white;
+      font-size: 16px;
+      font-family: 'Poppins Medium';
   }
 
   .tag_2 select {
     background: none;
-  }
-
-  .main_heading {
-    /* margin-bottom: 16%; */
-    margin-bottom: 19rem;
   }
 
   .main_heading_content {
@@ -200,7 +197,6 @@ main {
     border-radius: 10px;
     height: 55px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 20px;
     width: 49%;
@@ -368,16 +364,21 @@ main {
 }
 
 @media only screen and (min-width: 859px) and (max-width: 1300px) {
-  /* .side_circle{
-        width: 500px;
-        height: 600px;
-    } */
 
   .main_container {
     background: url(../assets/images/desktop.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  .sign_in{
+    background: none;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins Medium';
+}
+
 
   .content_image {
     display: none;
@@ -389,11 +390,10 @@ main {
 
   .header_elems {
     padding: 15px 25px;
-    width: 79%;
+    width: 81%;
   }
 
-  .header_start,
-  .sign_in {
+  .header_start{
     outline: none;
     border: none;
     background: white;
@@ -405,11 +405,8 @@ main {
     transition: 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* main heading */
-  .main_heading {
-    /* margin-bottom: 16%; */
-    margin-bottom: 19rem;
-  }
+
+
 
   .sub_heading {
     margin-bottom: 40px;
@@ -438,7 +435,6 @@ main {
     align-items: center;
     padding: 20px;
     width: 49%;
-    margin-bottom: 13vh;
   }
 
   .socials img {
@@ -560,14 +556,6 @@ main {
     display: flex;
   }
 
-  .content_image {
-    order: 2;
-  }
-
-  .content_heading {
-    order: 1;
-  }
-
   .social_images {
     position: absolute;
     height: 200px;
@@ -604,6 +592,11 @@ main {
   .sub_heading {
     width: 60%;
     font-size: 20px;
+  }
+
+  .tag_1,.tag_2,.tag_3.tag_4{
+      font-size: 15px;
+      font-family: 'Popins Medium';
   }
 }
 
@@ -733,7 +726,6 @@ main {
     border-radius: 10px;
     height: 55px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 8px;
   }
@@ -827,10 +819,15 @@ main {
   }
 }
 
+@media only screen and (min-width: 555px) and (max-width:858px) {
+    .content_landing{
+        padding: 10px 6rem;
+    }
+}
+
 @media only screen and (max-width: 390px) {
   .main_heading_content {
     font-size: 30px !important;
-    height: 17vh;
   }
   .sub_heading {
     font-size: 13px;
@@ -869,7 +866,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .socials {
     width: 35%;
   }
