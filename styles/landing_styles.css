@@ -20,6 +20,8 @@ main {
   padding: 10px;
 }
 
+.landing_logo{cursor: pointer;}
+
 .side_circle {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -48,11 +50,13 @@ main {
 .tag_1,.tag_2,.tag_4,.sign_in{
     font-family: 'Poppins', sans-serif;
     background: inherit;
+    cursor: pointer;
 }
 
 .tag_2 select{
     outline: none;
     border: none;
+    background: transparent;
 }
 
 
@@ -123,15 +127,28 @@ main {
     .sign_in{
         outline: none;
         border: none;
-        background: #ff485e;
+        background: white;
         border-radius: 10px;
         padding: 5px 10px;
-        color: white;
+        color: #ff485e;
         cursor: pointer;
+        box-shadow: 0px 3px 7px #0000004d;
+        transition: 0.1s cubic-bezier(0.215, 0.610, 0.355, 1);
     }
 
-    .tag_2{
-        background: inherit;
+    .header_start:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 3px 7px #ff485d59;
+        font-weight: bold;
+    }
+    .sign_in:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 3px 7px #ff485d59;
+        font-weight: bold;
+    }
+
+    .tag_2 select{
+        background: none;
     }
 
     .main_heading{
@@ -169,7 +186,6 @@ main {
         align-items: center;
         padding: 20px;
         width: 49%;
-        margin-bottom: 13vh;
       }
     
     
