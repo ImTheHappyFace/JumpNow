@@ -376,11 +376,13 @@ main {
     .sign_in{
         outline: none;
         border: none;
-        background: #ff485e;
+        background: white;
         border-radius: 10px;
         padding: 5px 10px;
-        color: white;
+        color: #ff485e;
         cursor: pointer;
+        box-shadow: 0px 3px 7px #0000004d;
+        transition: 0.1s cubic-bezier(0.215, 0.610, 0.355, 1);
     }
 
 
@@ -593,7 +595,7 @@ main {
 
 /* MQ 2 */
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 858px) {
   .tag_1,
   .tag_2,
   .tag_4{
