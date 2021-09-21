@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="./styles/landing_styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://kit.fontawesome.com/c92a8baa98.js" crossorigin="anonymous"></script>
+
     <title>Landing Page</title>
 </head>
 
 <body>
-    <main class="main">
+    <main class="main" style="background: url(./assets/images/background.png);">
 
-        <div class="side_circle">
+        <!-- <div class="side_circle">
 
-        </div>
+        </div> -->
 
         <!-- Header -->
         <header class="landing_header menu">
@@ -24,19 +26,26 @@
                 <img src="./assets/images/JN_1 2.png" alt="">
             </div>
             <div class="header_elems">
-                <span class="tags tag_1">
-                    Influencers and Agencies
-                </span>
-                <span class="tags tag_2">
-                    brand
-                </span>
-                <span class="tags tag_3">
-                    Sign In
-                </span>
+                <div class="tags tag_1">
+                    Influencers and Creators
+                </div>
+                <div class="tags tag_2">
+                        <select name="B&A" id="brands_agencies">
+                            <option value="Instagram">Brands and Agencies</option>
+                            <option value="Facebook">New Barnding</option>
+                        </select>
+                </div>
 
-                <span class="tags ham_menu">
+                <div class="get_started tag_4">
+                    <button class="header_start">Get Started</button>
+                </div>
+                <div class="tags tag_3 sign_in">
+                    Sign In
+                </div>
+
+                <div class="tags ham_menu">
                     <i class="fas fa-bars"></i>
-                </span>
+                </div>
             </div>
         </header>
 
@@ -45,23 +54,21 @@
 
         <section class="content_landing">
             <div class="content_image">
-                <img src="./assets/images/left.jpg" alt="" class="social_images image_left">
-                <img src="./assets/images/center.jpg" alt="" class="social_images image_center">
-                <img src="./assets/images/right@2x.png" alt="" class="social_images image_right">
-                <!-- <span>sad</span> -->
-
+                <img src="./assets/images/left.png" alt="" class="social_images image_left">
+                <img src="./assets/images/center.png" alt="" class="social_images image_center">
+                <img src="./assets/images/right.png" alt="" class="social_images image_right">
             </div>
 
-            <div class="hashtags ">
-                <span>#influencers</span>
-                <span>#collab</span>
-                <span>#paid</span>
-                <span>#brand</span>
-                <span>#roi</span>
-            </div>
 
-            <div class="content_heading">
-                <div class="main_heding">
+            <div class="main_heding">
+                <div class="content_heading">
+                    <div class="hashtags ">
+                        <span>#influencers</span>
+                        <span>#collab</span>
+                        <span>#paid</span>
+                        <span>#brand</span>
+                        <span>#roi</span>
+                    </div>
 
                     <h1 class="main_heading_content">
                         <span class="influencer">Influencer</span> Marketing Software & Service Solution
@@ -92,10 +99,6 @@
                             placeholder="search names,topics,categories and anything...">
                     </div>
                 </div>
-
-                <div class="collab_txt">
-                    <span> For Exclusive Brand deals and Paid collabs </span>
-                </div>
             </div>
         </section>
 
@@ -105,27 +108,31 @@
             </div>
 
             <div class="footer_sub">
-                <span>
+                <span class="footer_text">
                     info@jumpnow.agency
                 </span>
-                <span>
-                    Made with <span class="footer_hearts">&hearts;</span>
-                </span>
-                <span>
-                    &copy One Stone 2021
-                </span>
-                <span class="footer_socials">
-                    <i class="fab fa-facebook"></i>
-                </span>
-                <span class="footer_socials">
-                    <i class="fab fa-instagram"></i>
-                </span>
-                <span class="footer_socials">
-                    <i class="fab fa-twitter"></i>
-                </span>
-                <span class="footer_socials">
-                    <i class="fab fa-linkedin"></i>
-                </span>
+                <div class="one_stone">
+                    <span class="footer_text">
+                        Made with <span class="footer_hearts">&hearts;</span>
+                    </span>
+                    <span class="footer_text">
+                        &copy One Stone 2021
+                    </span>
+                </div>
+                <div class="footer_socials_main">
+                    <span class="footer_socials footer_text">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                    <span class="footer_socials footer_text">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                    <span class="footer_socials footer_text">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span class="footer_socials footer_text">
+                        <i class="fab fa-linkedin"></i>
+                    </span>
+                </div>
             </div>
 
         </footer>
