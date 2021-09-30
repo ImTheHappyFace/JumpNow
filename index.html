@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./styles/landing_styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script> -->
     <script src="https://kit.fontawesome.com/c92a8baa98.js" crossorigin="anonymous"></script>
 
     <title>Landing Page</title>
@@ -31,23 +34,24 @@
                         Influencers and Creators
                     </div>
                     <div class="tags tag_2">
-                        <select name="B&A" id="brands_agencies">
+                        <span>Brands and Agencies</span>
+                        <!-- <select name="B&A" id="brands_agencies">
                             <option value="Instagram">Brands and Agencies</option>
                             <option value="Facebook">New Barnding</option>
-                        </select>
+                        </select> -->
                     </div>
                 </div>
 
                 <div class="tag_main_2">
                     <div class="tags get_started tag_4">
-                        <button class="header_start">Get Started</button>
+                        <button class="header_start">Log In</button>
                     </div>
-                    <div class="tags tag_3 sign_in">
-                        Sign In
+                    <div class="">
+                        <button class="header_start btn_2_signup">Sign Up</button>
                     </div>
                 </div>
 
-                <div class="tags ham_menu">
+                <div class=" ham_menu">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
@@ -57,57 +61,74 @@
         <!-- Section-1 -->
 
         <section class="content_landing">
-            <div class="content_image">
-                <img src="./assets/images/left.png" alt="" class="social_images image_left">
-                <img src="./assets/images/center.png" alt="" class="social_images image_center">
-                <img src="./assets/images/right.png" alt="" class="social_images image_right">
-            </div>
+            <div class="main_heading" id="main_heading">
+                <div class="content_heading mb-4">
 
-
-            <div class="main_heding">
-                <div class="content_heading">
-                    <div class="hashtags ">
-                        <span>#influencers</span>
-                        <span>#collab</span>
-                        <span>#paid</span>
-                        <span>#brand</span>
-                        <span>#roi</span>
+                    <div id="typed-strings">
+                        <p> <strong class="gradient-text gradient_fb"> Facebook</strong> </p>
+                        <p> <strong class="gradient-text gradient_insta"> Instagram</strong> </p>
+                        <p> <strong class="gradient-text gradient_twitter"> Twitter</strong> </p>
+                        <p> <strong class="gradient-text gradient_youtube"> YouTube</strong> </p>
                     </div>
 
+
                     <h1 class="main_heading_content">
-                        <strong><span class="influencer">Influencer</span> Marketing</strong> Software & Service
-                        Solution
+                        <strong><span class="influencer">Influencer</span> Marketing</strong>
+                        Software & Service Solution for
+
+                        <span id="typed"></span>
                     </h1>
                 </div>
 
-                <div class="sub_heading">
-                    Building trust and maximizing ROI for brands while enabling
-                    seamless campaign process and instant payouts for creators.
+                <div class="sub_heading mb-3">
+                    <span> Building trust and maximizing ROI for brands while enabling
+                        seamless campaign process and instant payouts for creators.</span>
                 </div>
 
-                <div class="search search_socials">
-                    <div class="socials ">
-                        <img style="height: 3vh;" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" />
+                <div class="hashtags mb-5">
+                    <span>#influencers <i class="fas fa-circles small_dot"></i> </span>
+                    <span>#collab <i class="fas fa-circles small_dot"></i></span>
+                    <span>#paid <i class="fas fa-circles small_dot"></i></span>
+                    <span>#brand <i class="fas fa-circles small_dot"></i></span>
+                    <span>#roi </span>
+                </div>
+
+                <div class="search search_socials mb-3" style="position: relative;">
+                    <div class="select_1 ">
                         <span>
-                            <select name="socials" id="socials">
-                                <option value="Instagram">Instagram</option>
-                                <option value="Facebook">Facebook</option>
-                                <!-- <option value="opel">Opel</option>
-                                <option value="audi">Audi</option> -->
+                            <select name="socials" id="">
+                                <option value="Instagram">Brand</option>
+                                <option value="Facebook">Creator</option>
                             </select>
                         </span>
-                        </i>
                     </div>
                     <div class="search_main">
-                        <i class="fas fa-search"></i>
                         <input class="search_cc" type="text"
                             placeholder="search names,topics,categories and anything...">
+
+
+
                     </div>
+                    <button class="btn_search_sign_up">Sign Up</button>
+                </div>
+                <div class="mt-3 mb-5">
+                    <a href="" style="text-decoration: none;color: #ff485e;cursor: pointer;font-size: 18px;">
+                        <span><i class="fas fa-arrow-right animate_arrow"></i></span>
+                        <span class="try_now">Try Now</span>
+                    </a>
+                </div>
+                <div class="btn_small">
+                    <button class="btn_search_sign_up_2">Sign Up</button>
                 </div>
             </div>
+
+
         </section>
 
-        <footer class="footer_main">
+
+
+
+        <!-- <footer class="footer_main">
             <div class="btn_started">
                 <button class="btn_main"> Get Started</button>
             </div>
@@ -140,8 +161,18 @@
                 </div>
             </div>
 
-        </footer>
+        </footer> -->
     </main>
-    <script src="./js/landing.js"></script>
+    <script>
+        $('document').ready(function () {
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                backSpeed: 60,
+                typeSpeed: 60,
+                loop: true
+            })
+        })
+    </script>
 </body>
+
 </html>
